@@ -1,12 +1,13 @@
 package com.github.clayton.microprofile;
 
+import io.quarkus.runtime.annotations.QuarkusMain;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
-@QuarkusTest
+@QuarkusMain
 public class HelloResourceTest {
 
     @Test
